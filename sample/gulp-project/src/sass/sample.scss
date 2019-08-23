@@ -1,0 +1,32 @@
+body {
+  background: #000;
+}
+p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  span {
+    color: yellow;
+  }
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  @media all and (min-width: 480px) {
+    span {
+      color: sienna;
+    }
+  }
+  @media all and (min-width: 767px) {
+    span {
+      color: rebeccapurple;
+    }
+  }
+  @media all and (min-width: 480px) {
+    span {
+      border-bottom: 1px dotted yellowgreen;
+    }
+  }
+}
